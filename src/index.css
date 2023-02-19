@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+p{
+  margin: 0%;
+}
+input:focus{
+  outline: none;
+}
+
+input::placeholder{
+  color: #64748B;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+@media only screen and (max-width: 600px) {
+  html{
+    font-size: 65%;
+  }
+}

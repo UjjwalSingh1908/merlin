@@ -1,0 +1,163 @@
+.App{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./assets/bg.svg);
+  background-size: cover;
+  background-color: #000;
+  background-position-x: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #FAFAF9;
+  overflow-x: hidden;
+}
+
+.h1{
+display: inline-flex;
+gap: 0.6rem;
+font-size: 3.6rem;
+font-weight: bold;
+}
+.h2{
+  margin-top: 25px;
+  width: 28rem;
+  font-size: 1.15rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+.search{
+  margin-top: 3.8rem;
+  width: 48rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: double 2px transparent;
+  border-radius: 6px;
+  background-image: linear-gradient(white, white), 
+  linear-gradient(to right,#921DFB
+  50%,
+  #F334F2
+  100%,
+  #FF0082
+  50%);
+background-origin: border-box;
+background-clip: padding-box, border-box;
+position: relative;
+}
+
+.search input{
+  width: 100%;
+  height: 100%;
+  background-color:#1E293B;
+  border: none;
+   color: #FAFAF9;;
+  caret-color: #64748B;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.enter{
+  position: absolute;
+width: 0.9rem;
+height: 0.9rem;
+right: 0.8rem;
+top: 1.1rem;
+}
+
+.results{
+  margin-top: 4rem;
+  background: #0F172A;
+border: 1px solid #334155;
+border-radius: 1rem;
+width: 48rem;
+
+}
+
+.results-header{
+  border-bottom: 1px solid #334155;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.content{
+  margin: 0.6rem 1.2rem;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  height: 11rem;
+  overflow-y: auto;
+}
+
+.icons{
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.icon{
+  padding: 4px;
+  border-radius: 0.5rem;
+  background: #334155;
+  cursor: pointer;
+}
+
+.arrows{
+  display: flex;
+  justify-content: center;
+}
+
+.arrowl{
+  padding:  4px;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  background: #334155;
+  cursor: pointer;
+}
+
+.arrowr{
+  padding:  4px;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  background: #334155;
+  cursor: pointer;
+}
+
+.icon:hover, .arrowl:hover, .arrowr:hover{
+  background: #1E293B;
+}
+
+.icon:active, .arrowl:active, .arrowr:active{
+  background: #0F172A;
+}
+
+
+::-webkit-scrollbar {
+  width: 4px;
+ margin-right: 2rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #CBD5E1;
+  border-radius: 0.6rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #94A3B8;
+  border-radius: 0.6rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .search, .results, h2{
+    width: 75%;
+  }
+ 
+}
